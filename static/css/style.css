@@ -1,0 +1,74 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+  @font-face {
+   font-family: "Gelasio";
+   src: url("/static/font/Gelasio-Bold.woff2"),
+   url("/static/font/Gelasio-Bold.woff");
+   font-weight: 700;
+   font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
+   font-style: normal;
+  }
+  @font-face {
+    font-family: "Gelasio";
+    src: url("/static/font/Gelasio-Medium.woff2"),
+    url("/static/font/Gelasio-Medium.woff");
+    font-weight: 500;
+    font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
+    font-style: normal;
+   }
+   @font-face {
+    font-family: "roboto";
+    src: url("/static/font/Roboto-Medium.woff2"),
+    url("/static/font/Roboto-Medium.woff");
+    font-weight: 500;
+    font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
+    font-style: normal;
+   }
+   @font-face {
+    font-family: "roboto";
+    src: url("/static/font/Roboto-Regular.woff2"),
+    url("/static/font/Roboto-Regular.woff");
+    font-weight: 400;
+    font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
+    font-style: normal;
+   }
+   @font-face {
+    font-family: "ribeye";
+    src: url("/static/font/Ribeye-Regular.woff2"),
+    url("/static/font/Ribeye-Regular.woff");
+    font-weight: 400;
+    font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
+    font-style: normal;
+   }
+   :root { /*Глобальная переменная (работает для всего сайта)*/
+    --font-family-Gelasio:"Gelasio",sans-serif; /*--font-family -название переменной ("Poppins",sans-serif; -какой будет шрифт после,если не сработает) */
+    --font-family-roboto:"roboto",sans-serif;
+    --font-family-ribeye:"ribeye",sans-serif; 
+}
+body {
+    font-family:"Gelasio,Roboto,Ribeye"sans-serif;
+}
+   .test1 {
+    font-family:var(--font-family-Gelasio);
+    font-weight: 700;
+     
+   }
+   .test2 {
+    font-family:var(--font-family-roboto);
+    font-weight: 500;
+    
+   }
+   .test3 {
+    font-family:var(--font-family-ribeye);
+    font-weight: 400;
+    
+   }
