@@ -9,3 +9,39 @@
 	padding: 0;
 	margin: 0;
 	}
+ 
+    @font-face {                                                    /*медиа запрос к шрифту*/
+        font-family: "ribeye";                                     /*тут водиться шрифт*/
+        src: url("../fonts/frankruhlLibre-regular.ttf") format("ttf");   /*код подключения шрифта*/
+        font-display: swap;                                         /*код подключения шрифта*/
+        font-weight: 400;                                           /*тут водиться размер шрифта*/
+        font-style: normal;                                         /*тут убирается все стили шрифта*/
+    }
+    @font-face {                                                    /*медиа запрос к шрифту*/
+        font-family: "roboto";                                     /*тут водиться шрифт*/
+        src: url("../fonts/roboto-regular.ttf") format("ttf");   /*код подключения шрифта*/
+        font-display: swap;                                         /*код подключения шрифта*/
+        font-weight: 400;                                           /*тут водиться размер шрифта*/
+        font-style: normal;                                         /*тут убирается все стили шрифта*/
+    }
+    @font-face {                                                    /*медиа запрос к шрифту*/
+        font-family: "roboto";                                     /*тут водиться шрифт*/
+        src: url("../fonts/roboto-medium.ttf") format("ttf");   /*код подключения шрифта*/
+        font-display: swap;                                         /*код подключения шрифта*/
+        font-weight: 500;                                           /*тут водиться размер шрифта*/
+        font-style: normal;                                         /*тут убирается все стили шрифта*/
+    }
+    @font-face {                                                    /*медиа запрос к шрифту*/
+        font-family: "gelasio";                                     /*тут водиться шрифт*/
+        src: url("../fonts/gelasio-medium.ttf") format("ttf");   /*код подключения шрифта*/
+        font-display: swap;                                         /*код подключения шрифта*/
+        font-weight: 500;                                           /*тут водиться размер шрифта*/
+        font-style: normal;                                         /*тут убирается все стили шрифта*/
+    }
+    @font-face {                                                    /*медиа запрос к шрифту*/
+        font-family: "gelasio";                                     /*тут водиться шрифт*/
+        src: url("../fonts/gelasio-bold.ttf") format("ttf");   /*код подключения шрифта*/
+        font-display: swap;                                         /*код подключения шрифта*/
+        font-weight: 700;                                           /*тут водиться размер шрифта*/
+        font-style: normal;                                         /*тут убирается все стили шрифта*/
+    }
