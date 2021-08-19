@@ -1,74 +1,129 @@
 * {
-	vertical-align: baseline;
-	font-weight: inherit;
-	font-family: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	border: 0 none;
-	outline: 0;
-	padding: 0;
-	margin: 0;
-	}
-  @font-face {
-   font-family: "Gelasio";
-   src: url("/static/font/Gelasio-Bold.woff2"),
-   url("/static/font/Gelasio-Bold.woff");
-   font-weight: 700;
-   font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
-   font-style: normal;
-  }
-  @font-face {
-    font-family: "Gelasio";
-    src: url("/static/font/Gelasio-Medium.woff2"),
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "Gelasio";
+  src: url("/static/font/Gelasio-Bold.woff2"),
+    url("/static/font/Gelasio-Bold.woff");
+  font-weight: 700;
+  font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gelasio";
+  src: url("/static/font/Gelasio-Medium.woff2"),
     url("/static/font/Gelasio-Medium.woff");
-    font-weight: 500;
-    font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
-    font-style: normal;
-   }
-   @font-face {
-    font-family: "roboto";
-    src: url("/static/font/Roboto-Medium.woff2"),
+  font-weight: 500;
+  font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("/static/font/Roboto-Medium.woff2"),
     url("/static/font/Roboto-Medium.woff");
-    font-weight: 500;
-    font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
-    font-style: normal;
-   }
-   @font-face {
-    font-family: "roboto";
-    src: url("/static/font/Roboto-Regular.woff2"),
+  font-weight: 500;
+  font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("/static/font/Roboto-Regular.woff2"),
     url("/static/font/Roboto-Regular.woff");
-    font-weight: 400;
-    font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
-    font-style: normal;
-   }
-   @font-face {
-    font-family: "ribeye";
-    src: url("/static/font/Ribeye-Regular.woff2"),
+  font-weight: 400;
+  font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
+  font-style: normal;
+}
+@font-face {
+  font-family: "ribeye";
+  src: url("/static/font/Ribeye-Regular.woff2"),
     url("/static/font/Ribeye-Regular.woff");
-    font-weight: 400;
-    font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
-    font-style: normal;
-   }
-   :root { /*Глобальная переменная (работает для всего сайта)*/
-    --font-family-Gelasio:"Gelasio",sans-serif; /*--font-family -название переменной ("Poppins",sans-serif; -какой будет шрифт после,если не сработает) */
-    --font-family-roboto:"roboto",sans-serif;
-    --font-family-ribeye:"ribeye",sans-serif; 
+  font-weight: 400;
+  font-display: swap; /*рендер шрифтов,более быстро и корректно происходил*/
+  font-style: normal;
 }
-body {
-    font-family:"Gelasio,Roboto,Ribeye"sans-serif;
+:root {
+  /*Глобальная переменная (работает для всего сайта)*/
+  --font-family-Gelasio:"Gelasio",sans-serif; /*--font-family -название переменной ("Poppins",sans-serif; -какой будет шрифт после,если не сработает) */
+  --font-family-roboto: "roboto", sans-serif;
+  --font-family-ribeye: "ribeye", sans-serif;
 }
-   .test1 {
+
+/* .test1 {
     font-family:var(--font-family-Gelasio);
-    font-weight: 700;
-     
-   }
-   .test2 {
-    font-family:var(--font-family-roboto);
-    font-weight: 500;
-    
-   }
-   .test3 {
-    font-family:var(--font-family-ribeye);
-    font-weight: 400;
-    
-   }
+    font-weight: 700;  
+   } */
+body {
+  background-color: #e5e5e5;
+}
+.header-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 30px;
+  padding-bottom: 130px;
+  background-image: url("/static/images/Rectangle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 633px;
+}
+.section-row {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 62px;
+}
+.logo {
+
+}
+.logo-link {
+  color: #fff;
+  font-size: 24px;
+  font-family: var("--font-family-ribeye");
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 20px;
+}
+.logo-link:hover{
+  color: burlywood;
+  transition: color 0.5s ease-in-out; /*(transition:)АНИМАЦИЯ ПЕРЕХОДА,(color 0.3s)ВРЕМЯ ПЕРЕХОДА,(ease-in-out)Анимация начинается и заканчивается медленно. */
+}
+.naw {
+  display: flex;
+}
+.naw-column {
+  list-style: none;
+}
+.naw-column:not(:last-child) { /*кроме последнего*/
+  padding-right: 50px; /*кроме последнего*/
+}
+.column-link {
+  color: #fff;
+  font-size: 18px;
+  font-family: var("--font-family-roboto");
+  font-weight: 500px;
+  text-decoration: none;
+  
+}
+.column-link:hover {
+  color: burlywood;
+  transition: color 0.5s ease-in-out; /*(transition:)АНИМАЦИЯ ПЕРЕХОДА,(color 0.5s)ВРЕМЯ ПЕРЕХОДА,(ease-in-out)Анимация начинается и заканчивается медленно. */
+}
+.button {
+  
+}
+.button-link {
+  color: #fff;
+  text-decoration: none;
+  background-color: #C9453B;
+  border-radius: 5px;
+  padding: 14px 35px 13px 36px;
+}
