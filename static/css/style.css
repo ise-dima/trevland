@@ -1,28 +1,5 @@
 * {
-<<<<<<< HEAD
-	vertical-align: baseline;
-	font-weight: inherit;
-	font-family: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	border: 0 none;
-	outline: 0;
-	padding: 0;
-	margin: 0;
-	}
-	.header-container {
-		padding: 0 15px;
-		max-width: 1600px;
-		margin:0 auto;
-	}
-	.header-content {
-		margin: 49px 0px;
-		min-height: 900px;
-		background-image: url("/static/images/Rectangle.png");
-		background: cover center no-repeat;
-
-	}
-=======
+  box-sizing: border-box;
   vertical-align: baseline;
   font-weight: inherit;
   font-family: inherit;
@@ -78,6 +55,9 @@
   --font-family-Gelasio:"Gelasio",sans-serif; /*--font-family -название переменной ("Poppins",sans-serif; -какой будет шрифт после,если не сработает) */
   --font-family-roboto: "roboto", sans-serif;
   --font-family-ribeye: "ribeye", sans-serif;
+  --color-white:#fff;
+  --color-black:#000;
+  --color-gray: #808080;
 }
 
 /* .test1 {
@@ -86,69 +66,99 @@
    } */
 body {
   background-color: #e5e5e5;
-}
-.header-container {
   max-width: 1600px;
   margin: 0 auto;
 }
-.section {
-  padding-top: 30px;
-  padding-bottom: 130px;
-  background-image: url("/static/images/Rectangle.png");
-  background-repeat: no-repeat;
+.content {
+  background-image: url("../images/Rectangle.png");
+  max-width: 1600px;
+  min-height: 900px;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  min-height: 633px;
-}
-.section-row {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 62px;
-}
-.logo {
 
 }
-.logo-link {
-  color: #fff;
-  font-size: 24px;
-  font-family: var("--font-family-ribeye");
-  font-weight: 400;
-  text-decoration: none;
-  line-height: 20px;
-}
-.logo-link:hover{
-  color: burlywood;
-  transition: color 0.5s ease-in-out; /*(transition:)АНИМАЦИЯ ПЕРЕХОДА,(color 0.3s)ВРЕМЯ ПЕРЕХОДА,(ease-in-out)Анимация начинается и заканчивается медленно. */
-}
-.naw {
+.content-title {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 0;
 }
-.naw-column {
-  list-style: none;
+.content-logo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0%;
+  max-width: 124px;
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-family-ribeye);
+  font-weight: 400;
+  font-size: 24px;
 }
-.naw-column:not(:last-child) { /*кроме последнего*/
-  padding-right: 50px; /*кроме последнего*/
+.nav-menu {
+  display:flex;
+  max-width: 520px;
+  flex-wrap: wrap;
 }
-.column-link {
-  color: #fff;
+.menu-text {
+  display: flex;
+  padding-left: 50px;
+}
+.text-link {
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-family-roboto);
+  font-weight: 500;
   font-size: 18px;
-  font-family: var("--font-family-roboto");
-  font-weight: 500px;
-  text-decoration: none;
-  
 }
-.column-link:hover {
-  color: burlywood;
-  transition: color 0.5s ease-in-out; /*(transition:)АНИМАЦИЯ ПЕРЕХОДА,(color 0.5s)ВРЕМЯ ПЕРЕХОДА,(ease-in-out)Анимация начинается и заканчивается медленно. */
-}
-.button {
-  
-}
-.button-link {
-  color: #fff;
-  text-decoration: none;
+.button-item {
+  max-width: 163px;
+  padding: 14px 35px 13px 36px;
   background-color: #C9453B;
   border-radius: 5px;
-  padding: 14px 35px 13px 36px;
 }
->>>>>>> 7e4c38aecfdf075947e7ef4c851bf5b1b8e61d2d
+.item-link {
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-family-roboto);
+  font-weight: 400;
+  font-size: 16px;
+}
+.caption {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin-top: 200px;
+  margin-left: 8%;
+}
+.caption-text {}
+.text-title {
+  max-width: 804px;
+  margin: 0;
+  margin-bottom: 30px;
+  color: var(--color-white);
+  font-family: var(--font-family-Gelasio);
+  font-weight: 700;
+  font-size: 65px;
+}
+.text-desc {
+  max-width: 458px;
+  margin: 0;
+  margin-bottom: 50px;
+  color: var(--color-gray);
+  font-family: var(--font-family-roboto);
+  font-weight: 400;
+  font-size: 18px;
+}
+.btn-link {
+  padding:18px 46px 17px 47px;
+  background-color: #C9453B;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--color-white);
+  font-family: var(--font-family-roboto);
+  font-weight: 400;
+  font-size: 16px;
+}
