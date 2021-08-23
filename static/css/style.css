@@ -162,3 +162,22 @@ body {
   font-weight: 400;
   font-size: 16px;
 }
+.aside-container {
+  background-color: var(--color-white);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.content-inner {
+  background-color: var(--color-white);
+  max-width: 1160px;
+  min-height: 688px;
+  margin: 0 auto;
+}
+.content-wrapper {
+  text-align: center;
+}
+.content-column {
+  display: flex;
+  gap: 30px;
+  
+}
