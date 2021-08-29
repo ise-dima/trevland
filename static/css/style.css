@@ -113,7 +113,7 @@ body {
   font-size: 18px;
 }
 .button-item {
-  max-width: 163px;
+  max-width: 165px;
   padding: 14px 35px 13px 36px;
   background-color: #C9453B;
   border-radius: 5px;
@@ -218,4 +218,135 @@ body {
  font-family: var(--font-family-roboto);
  font-weight: 400;
  color: var(--color-gray);
+}
+.rate-container {
+  background-color: var(--color-white);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.content-caption {
+  padding: 0;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 43px;
+  font-family: var(--font-family-Gelasio);
+  font-weight: 500;
+}
+.content-txt {
+  max-width: 656px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-family: var(--font-family-roboto);
+  font-weight: 400;
+  color: var(--color-gray);
+}
+/*КАРУСЕЛЬ*/
+/* User styles */
+@media screen and (min-width: 911px) {
+  .ant-carousel {
+    max-width: 1600px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 910px) {
+  .ant-carousel {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .ant-carousel {
+    max-width: 270px;
+  }
+}
+
+.ant-carousel {
+  margin: 60px auto auto;
+  padding-top: 10px;
+  background-color: white;
+}
+
+.ant-carousel-element {
+  width: 334px;
+}
+
+/* General styles */
+.ant-carousel {
+  width: auto;
+  position: relative;
+}
+
+.ant-carousel-hider {
+  overflow: hidden;
+}
+
+.ant-carousel-list {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ant-carousel-element {
+  display: block;
+  flex: 0 0 auto;
+}
+
+/* Navigation item styles */
+div.ant-carousel-arrow-left,
+div.ant-carousel-arrow-right {
+  width: 22px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 32;
+}
+
+div.ant-carousel-arrow-left {
+  left: -40px;
+  top: 40%;
+  display: block;
+  background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png")
+    no-repeat;
+}
+
+div.ant-carousel-arrow-right {
+  right: -40px;
+  top: 40%;
+  display: block;
+  background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png")
+    no-repeat;
+}
+
+div.ant-carousel-arrow-left:hover {
+  opacity: 1;
+}
+
+div.ant-carousel-arrow-right:hover {
+  opacity: 1;
+}
+
+div.ant-carousel-dots {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  z-index: 30;
+  text-align: center;
+}
+
+span.ant-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  padding: 0;
+  display: inline-block;
+  background-color: #bbb;
+  border-radius: 5px;
+  cursor: pointer;
 }
